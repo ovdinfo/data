@@ -26,7 +26,7 @@ require(['backbone', 'jquery'], function (Backbone, jquery) {
   // Bit of a hack to load out non- require module code
   require(['backbone.cloudant'], function () {
     $('#versions').append('<li>Backbone.Cloudant: ' + Backbone.Cloudant.VERSION + '</li>');
-    Backbone.Cloudant.database = "https://integral:xcabcdz@integral.cloudant.com/ovdinfo";
+    Backbone.Cloudant.database = "db.ovdinfo.net/ovdinfo";
 
     // start the change handler
     Backbone.Cloudant.changeHandler();
